@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="D&R Concrete & Restoration — Cleveland's concrete specialists. Driveways, patios, decorative, steps, repair & sealing. Free estimates. Call (216) 801-6798." />
+  <title>D&R Concrete & Restoration | Cleveland, OH | (216) 801-6798</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dr: {
+              black:    '#080706',
+              dark:     '#130F0A',
+              darker:   '#0D0B08',
+              red:      '#B91C1C',
+              'red-bright': '#DC2626',
+              'red-deep':   '#7F1D1D',
+              gold:     '#F59E0B',
+              'gold-light': '#FCD34D',
+              'gold-dark':  '#D97706',
+              'gold-pale':  '#FEF3C7',
+              yellow:   '#FBBF24',
+              gray:     '#9CA3AF',
+              'gray-dark': '#374151',
+            }
+          },
+          fontFamily: {
+            heading: ['Oswald', 'sans-serif'],
+            body:    ['Open Sans', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Open Sans', sans-serif; background: #080706; color: #fff; }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+    :focus-visible { outline: 3px solid #F59E0B; outline-offset: 3px; border-radius: 4px; }
+
+    /* ── Cinematic dark background ── */
+    .hero-bg {
+      background:
+        radial-gradient(ellipse at 30% 50%, rgba(180,40,10,0.18) 0%, transparent 60%),
+        radial-gradient(ellipse at 70% 80%, rgba(100,60,10,0.12) 0%, transparent 55%),
+        linear-gradient(160deg, #130A04 0%, #080706 40%, #0C0C0C 100%);
+    }
+
+    /* ── Glow logo ring ── */
+    .logo-glow {
+      filter: drop-shadow(0 0 18px rgba(245,158,11,0.6)) drop-shadow(0 0 40px rgba(185,28,28,0.4));
+    }
+
+    /* ── Shield badge ── */
+    .shield {
+      clip-path: polygon(50% 0%, 100% 18%, 100% 68%, 50% 100%, 0% 68%, 0% 18%);
+    }
+
+    /* ── Gold text gradient ── */
+    .gold-text {
+      background: linear-gradient(180deg, #FCD34D 0%, #F59E0B 40%, #D97706 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .gold-text-solid { color: #F59E0B; }
+
+    /* ── Red ribbon banner ── */
+    .red-ribbon {
+      background: linear-gradient(135deg, #7F1D1D 0%, #DC2626 50%, #B91C1C 100%);
+      position: relative;
+    }
+    .red-ribbon::before, .red-ribbon::after {
+      content: '';
+      position: absolute;
+      top: 0; bottom: 0;
+      width: 20px;
+      background: inherit;
+    }
+    .red-ribbon::before { left: -10px; clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 50%); }
+    .red-ribbon::after  { right: -10px; clip-path: polygon(0% 0%, 50% 0%, 100% 50%, 50% 100%, 0% 100%); }
+
+    /* ── Torn paper edge ── */
+    .torn-top {
+      position: relative;
+    }
+    .torn-top::before {
+      content: '';
+      display: block;
+      height: 28px;
+      background: inherit;
+      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 28' preserveAspectRatio='none'%3E%3Cpath d='M0,28 L0,14 Q30,0 60,14 Q90,28 120,10 Q150,0 180,18 Q210,28 240,8 Q270,0 300,16 Q330,28 360,6 Q390,0 420,20 Q450,28 480,10 Q510,0 540,18 Q570,28 600,8 Q630,0 660,16 Q690,28 720,4 Q750,0 780,20 Q810,28 840,10 Q870,0 900,18 Q930,28 960,8 Q990,0 1020,16 Q1050,28 1080,6 Q1110,0 1140,20 Q1170,28 1200,10 Q1230,0 1260,18 Q1290,28 1320,8 Q1350,0 1380,16 Q1410,28 1440,14 L1440,28 Z' fill='white'/%3E%3C/svg%3E");
+      -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 28' preserveAspectRatio='none'%3E%3Cpath d='M0,28 L0,14 Q30,0 60,14 Q90,28 120,10 Q150,0 180,18 Q210,28 240,8 Q270,0 300,16 Q330,28 360,6 Q390,0 420,20 Q450,28 480,10 Q510,0 540,18 Q570,28 600,8 Q630,0 660,16 Q690,28 720,4 Q750,0 780,20 Q810,28 840,10 Q870,0 900,18 Q930,28 960,8 Q990,0 1020,16 Q1050,28 1080,6 Q1110,0 1140,20 Q1170,28 1200,10 Q1230,0 1260,18 Q1290,28 1320,8 Q1350,0 1380,16 Q1410,28 1440,14 L1440,28 Z' fill='white'/%3E%3C/svg%3E");
+      mask-size: 100% 100%;
+      -webkit-mask-size: 100% 100%;
+    }
+
+    /* ── Deal box ── */
+    .deal-box {
+      background: linear-gradient(160deg, #1a1008 0%, #0f0a04 100%);
+      border: 2px solid #D97706;
+      position: relative;
+      overflow: hidden;
+    }
+    .deal-box::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at top left, rgba(245,158,11,0.08) 0%, transparent 60%);
+    }
+
+    /* ── Red deal box ── */
+    .deal-box-red {
+      background: linear-gradient(160deg, #450a0a 0%, #7f1d1d 100%);
+      border: 2px solid #EF4444;
+      position: relative;
+      overflow: hidden;
+    }
+    .deal-box-red::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at top, rgba(220,38,38,0.2) 0%, transparent 60%);
+    }
+
+    /* ── Caution stripe ── */
+    .caution-stripe {
+      background: repeating-linear-gradient(
+        -45deg,
+        #F59E0B 0px, #F59E0B 12px,
+        #1a1008 12px, #1a1008 24px
+      );
+      height: 10px;
+    }
+
+    /* ── Gold badge (FREE ESTIMATES) ── */
+    .gold-badge {
+      background: radial-gradient(circle at 35% 35%, #FCD34D, #D97706);
+      border: 3px solid #92400E;
+      box-shadow: 0 0 0 2px #F59E0B, 0 4px 20px rgba(245,158,11,0.5), inset 0 2px 4px rgba(255,255,255,0.3);
+    }
+
+    /* ── Service chip ── */
+    .service-chip {
+      background: rgba(185,28,28,0.25);
+      border: 1px solid rgba(185,28,28,0.5);
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .service-chip:hover { background: rgba(185,28,28,0.45); border-color: #DC2626; }
+
+    /* ── Photo slot ── */
+    .photo-slot {
+      border: 1px solid rgba(245,158,11,0.2);
+      position: relative;
+      overflow: hidden;
+      background: #1C1510;
+    }
+    .photo-slot img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* ── Sticky nav ── */
+    #site-header { transition: box-shadow 0.25s ease; }
+    #site-header.scrolled { box-shadow: 0 2px 30px rgba(0,0,0,0.8); }
+
+    /* ── Mobile menu ── */
+    #mobile-menu { transition: max-height 0.3s ease, opacity 0.3s ease; }
+    #mobile-menu.closed { max-height: 0; opacity: 0; overflow: hidden; }
+    #mobile-menu.open   { max-height: 400px; opacity: 1; }
+
+    /* ── Form ── */
+    .form-input { transition: border-color 0.18s ease, box-shadow 0.18s ease; background: #1C1510; color: #fff; }
+    .form-input::placeholder { color: #6B7280; }
+    .form-input:focus { border-color: #F59E0B; box-shadow: 0 0 0 3px rgba(245,158,11,0.2); outline: none; }
+
+    /* ── Card hover ── */
+    .hover-lift { transition: transform 0.22s ease, box-shadow 0.22s ease; }
+    .hover-lift:hover { transform: translateY(-4px); }
+
+    /* ── Pulse CTA ── */
+    @keyframes pulse-gold {
+      0%, 100% { box-shadow: 0 4px 20px rgba(245,158,11,0.4); }
+      50%       { box-shadow: 0 4px 32px rgba(245,158,11,0.7); }
+    }
+    .pulse-gold { animation: pulse-gold 2.2s ease-in-out infinite; }
+
+    @keyframes pulse-red {
+      0%, 100% { box-shadow: 0 4px 20px rgba(220,38,38,0.5); }
+      50%       { box-shadow: 0 4px 32px rgba(220,38,38,0.8); }
+    }
+    .pulse-red { animation: pulse-red 2s ease-in-out infinite; }
+
+    /* ── Fire glow on logo ring ── */
+    @keyframes fire-pulse {
+      0%, 100% { opacity: 0.7; transform: scale(1); }
+      50%       { opacity: 1;   transform: scale(1.03); }
+    }
+    .fire-ring { animation: fire-pulse 3s ease-in-out infinite; }
+  </style>
+</head>
+
+<body class="antialiased">
+
+<!-- ═══════════════════════════════════
+     STICKY HEADER
+═══════════════════════════════════ -->
+<header id="site-header" class="fixed top-0 left-0 right-0 z-50 bg-dr-black border-b border-dr-gold/20">
+  <div class="caution-stripe"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-14">
+
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-3 flex-shrink-0" aria-label="D&R Concrete and Restoration Home">
+        <!-- Shield badge -->
+        <div class="relative w-9 h-10 flex-shrink-0">
+          <div class="shield w-full h-full bg-gradient-to-b from-dr-red to-dr-red-deep flex items-center justify-center"
+               style="border: 1px solid #F59E0B;" aria-hidden="true">
+            <span class="font-heading font-bold text-white text-xs tracking-tight leading-none text-center">D&amp;R</span>
+          </div>
+        </div>
+        <div class="leading-none">
+          <span class="block font-heading font-bold text-white text-base tracking-wide uppercase">D&amp;R Concrete</span>
+          <span class="block text-dr-gold text-xs font-medium tracking-widest uppercase">&amp; Restoration</span>
+        </div>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex items-center gap-6" aria-label="Main navigation">
+        <a href="#services" class="text-gray-400 hover:text-dr-gold font-heading font-medium text-sm uppercase tracking-wider transition-colors">Services</a>
+        <a href="#deals"    class="text-gray-400 hover:text-dr-gold font-heading font-medium text-sm uppercase tracking-wider transition-colors">Deals</a>
+        <a href="#gallery"  class="text-gray-400 hover:text-dr-gold font-heading font-medium text-sm uppercase tracking-wider transition-colors">Our Work</a>
+        <a href="#reviews"  class="text-gray-400 hover:text-dr-gold font-heading font-medium text-sm uppercase tracking-wider transition-colors">Reviews</a>
+      </nav>
+
+      <!-- Call Now -->
+      <div class="flex items-center gap-3">
+        <a href="tel:+12168016798"
+           class="hidden sm:flex items-center gap-2 bg-dr-red hover:bg-dr-red-bright text-white font-heading font-bold text-sm px-4 py-2 rounded tracking-wide uppercase transition-colors pulse-red">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.46 12 19.79 19.79 0 0 1 1.35 3.38 2 2 0 0 1 3.34 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 6.72 6.72l1.73-1.73a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          216-801-6798
+        </a>
+        <button id="menu-toggle" class="md:hidden p-2 text-gray-400 hover:text-white" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+          <svg id="icon-open"  width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg id="icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="hidden" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="closed md:hidden bg-dr-dark border-t border-dr-gold/20" aria-hidden="true">
+    <nav class="flex flex-col px-4 py-3 gap-1" aria-label="Mobile navigation">
+      <a href="#services" class="mobile-nav-link text-gray-300 hover:text-dr-gold px-3 py-2.5 font-heading text-sm uppercase tracking-wide transition-colors">Services</a>
+      <a href="#deals"    class="mobile-nav-link text-gray-300 hover:text-dr-gold px-3 py-2.5 font-heading text-sm uppercase tracking-wide transition-colors">Deals</a>
+      <a href="#gallery"  class="mobile-nav-link text-gray-300 hover:text-dr-gold px-3 py-2.5 font-heading text-sm uppercase tracking-wide transition-colors">Our Work</a>
+      <a href="#reviews"  class="mobile-nav-link text-gray-300 hover:text-dr-gold px-3 py-2.5 font-heading text-sm uppercase tracking-wide transition-colors">Reviews</a>
+      <a href="tel:+12168016798" class="mt-2 flex items-center justify-center gap-2 bg-dr-red text-white font-heading font-bold px-4 py-3 rounded text-sm uppercase tracking-wide">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.46 12 19.79 19.79 0 0 1 1.35 3.38 2 2 0 0 1 3.34 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 6.72 6.72l1.73-1.73a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call: 216-801-6798
+      </a>
+    </nav>
+  </div>
+</header>
+
+
+<!-- ═══════════════════════════════════
+     HERO
+═══════════════════════════════════ -->
+<section class="hero-bg pt-[4.5rem] min-h-screen flex flex-col" aria-labelledby="hero-heading">
+
+  <!-- Top banner -->
+  <div class="bg-dr-dark/80 border-b border-dr-gold/30 py-2">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <p class="font-heading text-dr-gold text-sm font-medium tracking-widest uppercase">
+        Locally Owned &amp; Operated · Serving Cleveland &amp; Surrounding Areas
+      </p>
+      <p class="font-heading text-white text-sm font-medium tracking-wider uppercase">
+        Free Estimates · <span class="text-dr-gold">Call (216) 801-6798</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="flex-1 flex items-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 w-full">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+        <!-- Left: Logo + headline + services -->
+        <div class="flex flex-col items-center lg:items-start text-center lg:text-left">
+
+          <!-- Shield logo badge -->
+          <div class="relative mb-6 fire-ring" aria-hidden="true">
+            <!-- Glow ring -->
+            <div class="absolute inset-0 rounded-full bg-gradient-to-br from-dr-gold/30 to-dr-red/20 blur-xl scale-125"></div>
+            <!-- Outer ring -->
+            <div class="relative w-52 h-52 sm:w-64 sm:h-64 flex items-center justify-center">
+              <!-- Fire glow -->
+              <div class="absolute inset-0 rounded-full" style="background: radial-gradient(ellipse at center, rgba(234,88,12,0.35) 0%, rgba(185,28,28,0.2) 40%, transparent 70%);"></div>
+              <!-- Shield -->
+              <div class="shield w-44 h-48 sm:w-52 sm:h-56 logo-glow flex flex-col items-center justify-center px-4 text-center"
+                   style="background: linear-gradient(160deg, #2d1a0e 0%, #1a0f07 50%, #0d0806 100%); border: 2px solid #D97706;">
+                <p class="font-heading font-bold text-dr-gold text-xs sm:text-sm tracking-widest uppercase mb-0.5">D&amp;R</p>
+                <p class="font-heading font-bold text-white text-xl sm:text-2xl leading-tight tracking-wide uppercase">CONCRETE</p>
+                <div class="w-12 h-0.5 bg-dr-gold my-1.5"></div>
+                <p class="font-heading font-medium text-dr-gold-light text-xs tracking-widest uppercase">AND RESTORATION</p>
+              </div>
+            </div>
+          </div>
+
+          <h1 id="hero-heading" class="font-heading font-bold text-white uppercase leading-tight tracking-wide text-4xl sm:text-5xl lg:text-6xl mb-2">
+            Concrete Installation
+          </h1>
+          <h2 class="font-heading font-bold uppercase leading-tight tracking-wide text-4xl sm:text-5xl lg:text-6xl mb-6">
+            <span class="text-white">&amp; </span><span class="gold-text">Restoration</span>
+          </h2>
+
+          <!-- Service chips -->
+          <div class="flex flex-wrap gap-2 justify-center lg:justify-start mb-8">
+            <span class="service-chip font-heading font-semibold text-white text-xs sm:text-sm uppercase tracking-wider px-3 py-1.5 rounded">Driveways</span>
+            <span class="service-chip font-heading font-semibold text-white text-xs sm:text-sm uppercase tracking-wider px-3 py-1.5 rounded">Patios</span>
+            <span class="service-chip font-heading font-semibold text-white text-xs sm:text-sm uppercase tracking-wider px-3 py-1.5 rounded">Decorative</span>
+            <span class="service-chip font-heading font-semibold text-white text-xs sm:text-sm uppercase tracking-wider px-3 py-1.5 rounded">Steps</span>
+            <span class="service-chip font-heading font-semibold text-white text-xs sm:text-sm uppercase tracking-wider px-3 py-1.5 rounded">Repair</span>
+            <span class="service-chip font-heading font-semibold text-white text-xs sm:text-sm uppercase tracking-wider px-3 py-1.5 rounded">Sealing</span>
+          </div>
+
+          <!-- CTA row -->
+          <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+            <a href="tel:+12168016798"
+               class="pulse-gold flex items-center justify-center gap-3 bg-gradient-to-b from-dr-gold to-dr-gold-dark hover:from-yellow-400 hover:to-dr-gold text-dr-black font-heading font-bold text-lg uppercase tracking-wide px-8 py-4 rounded transition-colors duration-200 cursor-pointer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.46 12 19.79 19.79 0 0 1 1.35 3.38 2 2 0 0 1 3.34 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 6.72 6.72l1.73-1.73a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              216-801-6798
+            </a>
+            <a href="#contact"
+               class="flex items-center justify-center gap-2 border-2 border-dr-gold text-dr-gold hover:bg-dr-gold hover:text-dr-black font-heading font-bold text-lg uppercase tracking-wide px-8 py-4 rounded transition-colors duration-200 cursor-pointer">
+              Free Estimate
+            </a>
+          </div>
+
+          <!-- Trust -->
+          <div class="flex flex-wrap gap-5 mt-8 justify-center lg:justify-start">
+            <div class="flex items-center gap-2 text-gray-400 text-sm">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.25C17.25 22.15 21 17.25 21 12V7l-9-5z"/></svg>
+              <span class="font-medium">Licensed &amp; Insured</span>
+            </div>
+            <div class="flex items-center gap-2 text-gray-400 text-sm">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+              <span class="font-medium">4.9★ Rated</span>
+            </div>
+            <div class="flex items-center gap-2 text-gray-400 text-sm">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span class="font-medium">20+ Years Experience</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Hero photo + FREE ESTIMATES badge -->
+        <div class="relative">
+          <div class="photo-slot rounded-2xl w-full" style="min-height: 360px; aspect-ratio: 4/3;"
+               role="img" aria-label="D&R crew finishing a freshly poured concrete driveway">
+            <img src="images/638283289_122253069992170624_8234070087846537868_n.jpg" alt="Freshly poured concrete driveway and walkway on a Cleveland residential street" style="object-position: center center;" />
+          </div>
+
+          <!-- FREE ESTIMATES badge -->
+          <div class="absolute -bottom-6 -right-4 sm:-right-8 w-28 h-28 gold-badge rounded-full flex flex-col items-center justify-center text-center z-10">
+            <p class="font-heading font-bold text-dr-black text-xs uppercase tracking-wider leading-tight">FREE</p>
+            <p class="font-heading font-bold text-dr-black text-sm uppercase tracking-wider leading-tight">ESTIMATES</p>
+            <div class="flex gap-0.5 mt-1">
+              <svg width="8" height="8" viewBox="0 0 24 24" fill="#7F1D1D" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+              <svg width="8" height="8" viewBox="0 0 24 24" fill="#7F1D1D" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+              <svg width="8" height="8" viewBox="0 0 24 24" fill="#7F1D1D" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+            </div>
+          </div>
+
+          <!-- Glow under image -->
+          <div class="absolute -inset-4 rounded-2xl bg-gradient-to-br from-dr-gold/10 to-dr-red/10 blur-2xl -z-10"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════
+     SPRING SPECIALS / DEALS
+═══════════════════════════════════ -->
+<section id="deals" class="py-16 lg:py-20 bg-dr-black" aria-labelledby="deals-heading">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Section header -->
+    <div class="text-center mb-10">
+      <div class="inline-flex items-center gap-3 mb-4">
+        <div class="caution-stripe flex-1 w-16 rounded" style="height:8px;"></div>
+        <h2 id="deals-heading" class="font-heading font-bold text-white text-3xl sm:text-4xl uppercase tracking-widest">
+          Spring <span class="gold-text">Specials</span>
+        </h2>
+        <div class="caution-stripe flex-1 w-16 rounded" style="height:8px;"></div>
+      </div>
+      <p class="text-gray-400 font-medium text-sm uppercase tracking-widest">Limited Time · Call Now to Lock In Your Deal</p>
+    </div>
+
+    <!-- Featured deal -->
+    <div class="deal-box-red rounded-2xl p-8 sm:p-10 text-center mb-6 hover-lift cursor-default">
+      <p class="font-heading font-bold text-white text-lg uppercase tracking-widest mb-3">Spring Special</p>
+      <p class="font-heading font-bold text-dr-gold leading-none mb-2" style="font-size: clamp(3.5rem, 10vw, 6rem);">$500 OFF</p>
+      <p class="font-heading font-bold text-white text-2xl sm:text-3xl uppercase tracking-wide mb-1">Any Project</p>
+      <p class="font-heading font-bold text-dr-gold text-2xl sm:text-3xl uppercase tracking-wide mb-6">$7,500 or More</p>
+      <div class="inline-block bg-white/10 border border-white/20 rounded px-5 py-2 mb-6">
+        <p class="font-heading font-bold text-white text-sm uppercase tracking-widest">Limited Time Only — Call Now!</p>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:+12168016798"
+           class="inline-flex items-center justify-center gap-2 bg-gradient-to-b from-dr-gold to-dr-gold-dark hover:from-yellow-400 hover:to-dr-gold text-dr-black font-heading font-bold text-xl uppercase tracking-wide px-10 py-4 rounded-lg transition-colors pulse-gold cursor-pointer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.46 12 19.79 19.79 0 0 1 1.35 3.38 2 2 0 0 1 3.34 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 6.72 6.72l1.73-1.73a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call Today: 216-801-6798
+        </a>
+        <a href="#contact"
+           class="inline-flex items-center justify-center gap-2 border-2 border-dr-gold text-dr-gold hover:bg-dr-gold hover:text-dr-black font-heading font-bold text-xl uppercase tracking-wide px-10 py-4 rounded-lg transition-colors cursor-pointer">
+          Claim This Deal
+        </a>
+      </div>
+    </div>
+
+    <!-- Secondary deals grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+
+      <!-- $250 OFF Driveway -->
+      <div class="deal-box rounded-xl p-6 text-center hover-lift cursor-default">
+        <p class="font-heading font-bold text-dr-gold text-5xl sm:text-6xl leading-none mb-1">$250</p>
+        <p class="font-heading font-bold text-white text-xl uppercase tracking-wide">OFF</p>
+        <div class="w-12 h-0.5 bg-dr-gold/50 mx-auto my-3"></div>
+        <p class="font-heading font-semibold text-white text-base uppercase tracking-wide mb-1">Driveway Installation</p>
+        <p class="text-gray-500 text-xs uppercase tracking-widest font-medium">New Custom Driveways</p>
+        <a href="tel:+12168016798" class="mt-4 inline-block bg-dr-red hover:bg-dr-red-bright text-white font-heading font-bold text-sm uppercase tracking-wide px-5 py-2 rounded transition-colors cursor-pointer">Claim Deal</a>
+      </div>
+
+      <!-- $100 OFF Patios -->
+      <div class="deal-box rounded-xl p-6 text-center hover-lift cursor-default">
+        <p class="font-heading font-bold text-dr-gold text-5xl sm:text-6xl leading-none mb-1">$100</p>
+        <p class="font-heading font-bold text-white text-xl uppercase tracking-wide">OFF</p>
+        <div class="w-12 h-0.5 bg-dr-gold/50 mx-auto my-3"></div>
+        <p class="font-heading font-semibold text-white text-base uppercase tracking-wide mb-1">Decorative Patios</p>
+        <p class="text-gray-500 text-xs uppercase tracking-widest font-medium">Stamped or Stained</p>
+        <a href="tel:+12168016798" class="mt-4 inline-block bg-dr-red hover:bg-dr-red-bright text-white font-heading font-bold text-sm uppercase tracking-wide px-5 py-2 rounded transition-colors cursor-pointer">Claim Deal</a>
+      </div>
+
+      <!-- Wash & Seal -->
+      <div class="deal-box rounded-xl p-6 text-center hover-lift cursor-default">
+        <p class="font-heading font-bold text-dr-gold text-5xl sm:text-6xl leading-none mb-1">$1.50</p>
+        <p class="font-heading font-bold text-white text-base uppercase tracking-wide">Per Sq. Ft.</p>
+        <div class="w-12 h-0.5 bg-dr-gold/50 mx-auto my-3"></div>
+        <p class="font-heading font-semibold text-white text-base uppercase tracking-wide mb-1">Wash &amp; Seal</p>
+        <p class="text-gray-500 text-xs uppercase tracking-widest font-medium">500 Sq. Ft. Minimum</p>
+        <div class="flex justify-center gap-3 mt-2 mb-3">
+          <span class="text-dr-gold-light text-xs font-medium">★ Clean</span>
+          <span class="text-dr-gold-light text-xs font-medium">★ Seal &amp; Protect</span>
+        </div>
+        <a href="tel:+12168016798" class="inline-block bg-dr-red hover:bg-dr-red-bright text-white font-heading font-bold text-sm uppercase tracking-wide px-5 py-2 rounded transition-colors cursor-pointer">Claim Deal</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════
+     SERVICES
+═══════════════════════════════════ -->
+<section id="services" class="py-16 lg:py-20" style="background: linear-gradient(180deg, #0D0B08 0%, #130F0A 100%);" aria-labelledby="services-heading">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center mb-12">
+      <p class="text-dr-gold font-heading text-sm uppercase tracking-widest font-medium mb-3">What We Do</p>
+      <h2 id="services-heading" class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl uppercase tracking-wide">
+        Built for <span class="gold-text">Cleveland.</span> Built to Last.
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <!-- Driveways & Patios -->
+      <div class="deal-box rounded-xl p-6 hover-lift cursor-default">
+        <div class="w-10 h-10 bg-dr-red/20 border border-dr-red/40 rounded-lg flex items-center justify-center mb-4">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        </div>
+        <h3 class="font-heading font-bold text-white text-xl uppercase tracking-wide mb-2">Driveways &amp; Patios</h3>
+        <p class="text-gray-400 text-sm leading-relaxed mb-3">Custom poured slabs with proper drainage, air-entrained mix, and salt-resistant sealers — engineered for Cleveland winters.</p>
+        <div class="caution-stripe rounded mt-4" style="height:4px;opacity:0.4;"></div>
+      </div>
+
+      <!-- Restoration & Repair -->
+      <div class="deal-box rounded-xl p-6 hover-lift cursor-default">
+        <div class="w-10 h-10 bg-dr-red/20 border border-dr-red/40 rounded-lg flex items-center justify-center mb-4">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <h3 class="font-heading font-bold text-white text-xl uppercase tracking-wide mb-2">Restoration &amp; Repair</h3>
+        <p class="text-gray-400 text-sm leading-relaxed mb-3">Save thousands vs. full replacement. We resurface, crack-inject, and seal deteriorated concrete so it looks brand new again.</p>
+        <div class="caution-stripe rounded mt-4" style="height:4px;opacity:0.4;"></div>
+      </div>
+
+      <!-- Stamped & Decorative -->
+      <div class="deal-box rounded-xl p-6 hover-lift cursor-default">
+        <div class="w-10 h-10 bg-dr-red/20 border border-dr-red/40 rounded-lg flex items-center justify-center mb-4">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+        </div>
+        <h3 class="font-heading font-bold text-white text-xl uppercase tracking-wide mb-2">Stamped &amp; Decorative</h3>
+        <p class="text-gray-400 text-sm leading-relaxed mb-3">50+ pattern options including flagstone, brick, and wood plank. Color integral or acid-stained to match any home's aesthetic.</p>
+        <div class="caution-stripe rounded mt-4" style="height:4px;opacity:0.4;"></div>
+      </div>
+
+      <!-- Steps -->
+      <div class="deal-box rounded-xl p-6 hover-lift cursor-default">
+        <div class="w-10 h-10 bg-dr-red/20 border border-dr-red/40 rounded-lg flex items-center justify-center mb-4">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+        </div>
+        <h3 class="font-heading font-bold text-white text-xl uppercase tracking-wide mb-2">Steps &amp; Stoops</h3>
+        <p class="text-gray-400 text-sm leading-relaxed mb-3">Custom concrete steps, front stoops, and entry landings built to handle Cleveland's freeze-thaw cycles without chipping or cracking.</p>
+        <div class="caution-stripe rounded mt-4" style="height:4px;opacity:0.4;"></div>
+      </div>
+
+      <!-- Sealing -->
+      <div class="deal-box rounded-xl p-6 hover-lift cursor-default">
+        <div class="w-10 h-10 bg-dr-red/20 border border-dr-red/40 rounded-lg flex items-center justify-center mb-4">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 class="font-heading font-bold text-white text-xl uppercase tracking-wide mb-2">Wash &amp; Sealing</h3>
+        <p class="text-gray-400 text-sm leading-relaxed mb-3">Professional pressure washing plus penetrating silane-siloxane sealers that block road salt and deicing chemicals. $1.50/sq ft.</p>
+        <div class="caution-stripe rounded mt-4" style="height:4px;opacity:0.4;"></div>
+      </div>
+
+      <!-- Commercial -->
+      <div class="deal-box rounded-xl p-6 hover-lift cursor-default">
+        <div class="w-10 h-10 bg-dr-red/20 border border-dr-red/40 rounded-lg flex items-center justify-center mb-4">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3 class="font-heading font-bold text-white text-xl uppercase tracking-wide mb-2">Commercial Flatwork</h3>
+        <p class="text-gray-400 text-sm leading-relaxed mb-3">Parking lots, warehouse floors, ADA ramps, and sidewalks. We handle commercial jobs of any scale with flexible scheduling.</p>
+        <div class="caution-stripe rounded mt-4" style="height:4px;opacity:0.4;"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════
+     PROJECT GALLERY
+═══════════════════════════════════ -->
+<section id="gallery" class="py-16 lg:py-20 bg-dr-black" aria-labelledby="gallery-heading">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center mb-12">
+      <p class="text-dr-gold font-heading text-sm uppercase tracking-widest font-medium mb-3">Our Work</p>
+      <h2 id="gallery-heading" class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl uppercase tracking-wide">
+        See the <span class="gold-text">D&amp;R Difference</span>
+      </h2>
+    </div>
+
+    <!-- Before/After -->
+    <div class="mb-6">
+      <p class="font-heading text-dr-gold text-xs uppercase tracking-widest font-medium mb-3 flex items-center gap-2">
+        <span class="w-5 h-px bg-dr-gold/50 inline-block"></span>
+        Fresh Pours — In Progress &amp; Completed
+        <span class="w-5 h-px bg-dr-gold/50 inline-block"></span>
+      </p>
+      <div class="grid grid-cols-2 gap-3">
+        <div class="photo-slot rounded-xl" style="min-height:240px;"
+             role="img" aria-label="Fresh concrete pour in forms — new construction driveway">
+          <img src="images/1f7b358fdfd6cfe5273b054dbcd303a8.jpeg" alt="Fresh concrete pour in wood forms next to a new home" />
+        </div>
+        <div class="photo-slot rounded-xl" style="min-height:240px;"
+             role="img" aria-label="Completed long concrete driveway — beautiful finish">
+          <img src="images/24e4cf53682db8b49dac4dc45a4f6ab4.jpeg" alt="Completed new concrete driveway with crisp edges and smooth finish" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery grid -->
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-3">
+      <div class="photo-slot rounded-xl" style="min-height:200px;"
+           role="img" aria-label="Stamped concrete patio — brick pattern">
+        <img src="images/e0128e6233c92b47555b0e32c5c80e9c.jpeg" alt="Stamped brick-pattern concrete patio in a residential backyard" />
+      </div>
+      <div class="photo-slot rounded-xl row-span-2" style="min-height:200px;"
+           role="img" aria-label="Round circular stamped concrete patio">
+        <img src="images/dad0482b115bff9efa9c120d3ef6cc43.jpeg" alt="Round circular stamped concrete patio with cobblestone pattern" style="object-position: center;" />
+      </div>
+      <div class="photo-slot rounded-xl" style="min-height:200px;"
+           role="img" aria-label="Long commercial concrete pad next to barn building">
+        <img src="images/86c109af59ae4c9dc1f39a0f10e4f06c.jpeg" alt="Long commercial concrete driveway and pad next to a farm building" />
+      </div>
+      <div class="photo-slot rounded-xl" style="min-height:200px;"
+           role="img" aria-label="Curved concrete walkway and steps — residential">
+        <img src="images/5d555d03715d0f8628f5a6aabcf50588.jpeg" alt="New curved concrete walkway with steps leading to a brick home" />
+      </div>
+      <div class="photo-slot rounded-xl" style="min-height:200px;"
+           role="img" aria-label="Long residential driveway — freshly poured">
+        <img src="images/7efb4ac054f0c167b8fdd613add812d0.jpeg" alt="Long newly poured concrete driveway leading to a residential garage" />
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════
+     SERVICE AREAS
+═══════════════════════════════════ -->
+<section class="py-14 lg:py-16" style="background: linear-gradient(180deg, #130F0A 0%, #0D0B08 100%);">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <p class="font-heading text-dr-gold text-sm uppercase tracking-widest font-medium mb-3">Where We Work</p>
+    <h2 class="font-heading font-bold text-white text-2xl sm:text-3xl uppercase tracking-wide mb-6">
+      Serving Cleveland &amp; Surrounding Areas
+    </h2>
+    <div class="flex flex-wrap gap-2 justify-center max-w-3xl mx-auto">
+      {['Cleveland','Lakewood','Parma','Beachwood','Strongsville','Westlake','Solon','North Olmsted','Mentor','Avon Lake','Medina','Euclid','Bay Village','Chagrin Falls','Willoughby','Kamm\'s Corners','West Park','Fairview Park','Berea','Brook Park'].map(area => `
+      <span class="inline-block border border-dr-gold/30 bg-dr-gold/5 text-gray-300 font-heading text-xs uppercase tracking-wider px-3 py-1.5 rounded font-medium hover:border-dr-gold hover:text-dr-gold transition-colors cursor-default">${area}</span>`).join('')}
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════
+     TESTIMONIALS
+═══════════════════════════════════ -->
+<section id="reviews" class="py-16 lg:py-20 bg-dr-black" aria-labelledby="reviews-heading">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center mb-12">
+      <p class="text-dr-gold font-heading text-sm uppercase tracking-widest font-medium mb-3">Customer Reviews</p>
+      <h2 id="reviews-heading" class="font-heading font-bold text-white text-3xl sm:text-4xl uppercase tracking-wide">
+        Don't Take Our Word For It
+      </h2>
+      <div class="flex items-center justify-center gap-1 mt-3" aria-label="4.9 star average rating">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+        <span class="text-gray-400 text-sm ml-2">4.9 / 5 · 80+ Google Reviews</span>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+      <!-- Review 1 -->
+      <blockquote class="deal-box rounded-xl p-7 hover-lift flex flex-col">
+        <div class="flex gap-1 mb-4" aria-label="5 stars">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+        </div>
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="rgba(245,158,11,0.15)" class="mb-3" aria-hidden="true"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+        <p class="text-gray-300 text-sm leading-relaxed flex-1 mb-5">
+          "D&amp;R transformed our crumbling driveway in just three days. Professional crew and the finish is perfect. Highly recommend for anyone in the Cleveland area!"
+        </p>
+        <footer class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-dr-red to-dr-red-deep flex items-center justify-center flex-shrink-0">
+            <span class="text-white font-heading font-bold text-sm" aria-hidden="true">JR</span>
+          </div>
+          <div>
+            <cite class="font-heading font-bold text-white text-sm not-italic uppercase tracking-wide">Jim R.</cite>
+            <p class="text-dr-gold text-xs font-medium">Westlake, OH</p>
+          </div>
+        </footer>
+      </blockquote>
+
+      <!-- Review 2 — featured -->
+      <blockquote class="deal-box-red rounded-xl p-7 hover-lift flex flex-col relative">
+        <div class="absolute top-0 left-0 right-0 caution-stripe rounded-t-xl" style="height:6px;"></div>
+        <div class="flex gap-1 mb-4 mt-2" aria-label="5 stars">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+        </div>
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="rgba(245,158,11,0.2)" class="mb-3" aria-hidden="true"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+        <p class="text-white text-sm leading-relaxed flex-1 mb-5">
+          "I thought I needed a total replacement, but their restoration service saved me thousands. It looks brand new again. Great communication throughout."
+        </p>
+        <footer class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full gold-badge flex items-center justify-center flex-shrink-0">
+            <span class="text-dr-black font-heading font-bold text-sm" aria-hidden="true">SM</span>
+          </div>
+          <div>
+            <cite class="font-heading font-bold text-white text-sm not-italic uppercase tracking-wide">Sarah M.</cite>
+            <p class="text-dr-gold text-xs font-medium">Cleveland Heights, OH</p>
+          </div>
+        </footer>
+      </blockquote>
+
+      <!-- Review 3 -->
+      <blockquote class="deal-box rounded-xl p-7 hover-lift flex flex-col">
+        <div class="flex gap-1 mb-4" aria-label="5 stars">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+        </div>
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="rgba(245,158,11,0.15)" class="mb-3" aria-hidden="true"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+        <p class="text-gray-300 text-sm leading-relaxed flex-1 mb-5">
+          "Fast, fair pricing, and they actually cleaned up the job site when they were done. Hard to find contractors this reliable nowadays."
+        </p>
+        <footer class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-dr-red to-dr-red-deep flex items-center justify-center flex-shrink-0">
+            <span class="text-white font-heading font-bold text-sm" aria-hidden="true">MT</span>
+          </div>
+          <div>
+            <cite class="font-heading font-bold text-white text-sm not-italic uppercase tracking-wide">Mike T.</cite>
+            <p class="text-dr-gold text-xs font-medium">Strongsville, OH</p>
+          </div>
+        </footer>
+      </blockquote>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════
+     LEAD GEN FORM
+═══════════════════════════════════ -->
+<section id="contact" class="py-16 lg:py-20" style="background: linear-gradient(180deg, #130F0A 0%, #080706 100%);" aria-labelledby="contact-heading">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-12 items-start">
+
+      <!-- Left -->
+      <div>
+        <p class="text-dr-gold font-heading text-sm uppercase tracking-widest font-medium mb-3">Free Estimate</p>
+        <h2 id="contact-heading" class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl uppercase tracking-wide leading-tight mb-5">
+          Get Your <span class="gold-text">Free Quote</span><br/>Today
+        </h2>
+        <p class="text-gray-400 text-base leading-relaxed mb-8">
+          Fill out the form and we'll be in touch within one business day — usually same day. Prefer to talk? Call us directly.
+        </p>
+
+        <!-- Big phone CTA -->
+        <a href="tel:+12168016798"
+           class="inline-flex items-center gap-3 bg-gradient-to-b from-dr-gold to-dr-gold-dark hover:from-yellow-400 hover:to-dr-gold text-dr-black font-heading font-bold text-2xl uppercase tracking-wide px-8 py-5 rounded-xl transition-colors pulse-gold cursor-pointer mb-8">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.46 12 19.79 19.79 0 0 1 1.35 3.38 2 2 0 0 1 3.34 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 6.72 6.72l1.73-1.73a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          216-801-6798
+        </a>
+
+        <!-- Trust points -->
+        <ul class="space-y-3">
+          <li class="flex items-center gap-3 text-gray-400 text-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            No pressure. No obligation. Just honest pricing.
+          </li>
+          <li class="flex items-center gap-3 text-gray-400 text-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Respond within 1 business day — usually same day.
+          </li>
+          <li class="flex items-center gap-3 text-gray-400 text-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Licensed, insured, and local to Greater Cleveland.
+          </li>
+          <li class="flex items-center gap-3 text-gray-400 text-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Mention a deal from this page to lock in your discount.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right: form -->
+      <div class="deal-box rounded-2xl p-7 sm:p-8" style="border-color: rgba(245,158,11,0.5);">
+        <div class="caution-stripe rounded-t-lg -mx-7 sm:-mx-8 -mt-7 sm:-mt-8 mb-6 rounded-tl-2xl rounded-tr-2xl" style="height:8px;"></div>
+        <h3 class="font-heading font-bold text-white text-2xl uppercase tracking-wide mb-1">Request a Free Quote</h3>
+        <p class="text-gray-500 text-sm mb-6">Takes less than 60 seconds.</p>
+
+        <form id="quote-form" novalidate aria-label="Request a quote">
+          <div class="space-y-4">
+
+            <div>
+              <label for="name" class="block font-heading text-dr-gold text-xs uppercase tracking-widest font-medium mb-1.5">
+                Full Name <span class="text-dr-red-bright" aria-label="required">*</span>
+              </label>
+              <input id="name" name="name" type="text" required autocomplete="name" placeholder="John Smith"
+                     class="form-input w-full border border-dr-gold/25 rounded-lg px-4 py-3 text-sm" aria-required="true" />
+              <p id="name-error" class="text-red-400 text-xs mt-1.5 hidden" role="alert" aria-live="polite"></p>
+            </div>
+
+            <div>
+              <label for="phone" class="block font-heading text-dr-gold text-xs uppercase tracking-widest font-medium mb-1.5">
+                Phone Number <span class="text-dr-red-bright" aria-label="required">*</span>
+              </label>
+              <input id="phone" name="phone" type="tel" required autocomplete="tel" placeholder="(216) 555-0100"
+                     class="form-input w-full border border-dr-gold/25 rounded-lg px-4 py-3 text-sm" aria-required="true" />
+              <p id="phone-error" class="text-red-400 text-xs mt-1.5 hidden" role="alert" aria-live="polite"></p>
+            </div>
+
+            <div>
+              <label for="service" class="block font-heading text-dr-gold text-xs uppercase tracking-widest font-medium mb-1.5">
+                Service Needed <span class="text-dr-red-bright" aria-label="required">*</span>
+              </label>
+              <select id="service" name="service" required
+                      class="form-input w-full border border-dr-gold/25 rounded-lg px-4 py-3 text-sm cursor-pointer" aria-required="true">
+                <option value="" disabled selected>Select a service…</option>
+                <option value="driveway">New Driveway</option>
+                <option value="patio">New Patio / Steps</option>
+                <option value="restoration">Concrete Restoration / Repair</option>
+                <option value="stamped">Stamped &amp; Decorative Concrete</option>
+                <option value="sealing">Wash &amp; Sealing</option>
+                <option value="commercial">Commercial Flatwork</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+              <p id="service-error" class="text-red-400 text-xs mt-1.5 hidden" role="alert" aria-live="polite"></p>
+            </div>
+
+            <div>
+              <label for="zip" class="block font-heading text-dr-gold text-xs uppercase tracking-widest font-medium mb-1.5">
+                Zip Code <span class="text-dr-red-bright" aria-label="required">*</span>
+              </label>
+              <input id="zip" name="zip" type="text" required inputmode="numeric" pattern="[0-9]{5}" maxlength="5"
+                     autocomplete="postal-code" placeholder="44102"
+                     class="form-input w-full border border-dr-gold/25 rounded-lg px-4 py-3 text-sm"
+                     aria-required="true" aria-describedby="zip-hint" />
+              <p id="zip-hint" class="text-gray-600 text-xs mt-1">Confirms your area is covered.</p>
+              <p id="zip-error" class="text-red-400 text-xs mt-1.5 hidden" role="alert" aria-live="polite"></p>
+            </div>
+
+            <button type="submit"
+                    class="w-full bg-gradient-to-b from-dr-gold to-dr-gold-dark hover:from-yellow-400 hover:to-dr-gold text-dr-black font-heading font-bold text-lg uppercase tracking-wide py-4 px-6 rounded-lg transition-colors cursor-pointer flex items-center justify-center gap-2 mt-2"
+                    style="box-shadow: 0 4px 20px rgba(245,158,11,0.35);">
+              <span id="btn-label">Get My Free Estimate</span>
+              <svg id="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              <svg id="btn-spinner" class="hidden animate-spin" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10" opacity="0.25"/><path d="M12 2a10 10 0 0 1 10 10" opacity="0.75"/></svg>
+            </button>
+          </div>
+
+          <div id="form-success" class="hidden mt-4 p-4 bg-green-900/30 border border-green-500/40 rounded-lg" role="status" aria-live="polite">
+            <div class="flex items-center gap-2 text-green-400">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <p class="font-heading font-bold text-sm uppercase tracking-wide">We got it! We'll be in touch today.</p>
+            </div>
+          </div>
+        </form>
+
+        <p class="text-gray-600 text-xs text-center mt-4">Your information is never shared or sold.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════
+     FOOTER
+═══════════════════════════════════ -->
+<footer class="bg-dr-darker border-t border-dr-gold/20" aria-label="Site footer">
+  <div class="caution-stripe" style="opacity:0.5;"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+      <!-- Brand -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <div class="relative w-8 h-9 flex-shrink-0">
+            <div class="shield w-full h-full bg-gradient-to-b from-dr-red to-dr-red-deep flex items-center justify-center" style="border:1px solid #F59E0B;" aria-hidden="true">
+              <span class="font-heading font-bold text-white text-xs">D&amp;R</span>
+            </div>
+          </div>
+          <div>
+            <span class="block font-heading font-bold text-white text-sm uppercase tracking-wide">D&amp;R Concrete</span>
+            <span class="block text-dr-gold text-xs uppercase tracking-widest">&amp; Restoration</span>
+          </div>
+        </div>
+        <p class="text-gray-500 text-sm leading-relaxed mb-4">Cleveland's trusted concrete specialists. Locally owned &amp; operated since 2004.</p>
+        <a href="tel:+12168016798" class="flex items-center gap-2 text-dr-gold hover:text-yellow-400 font-heading font-bold text-lg uppercase transition-colors">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.46 12 19.79 19.79 0 0 1 1.35 3.38 2 2 0 0 1 3.34 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 6.72 6.72l1.73-1.73a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          216-801-6798
+        </a>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h4 class="font-heading font-bold text-white text-xs uppercase tracking-widest mb-4">Services</h4>
+        <ul class="space-y-2">
+          <li><a href="#services" class="text-gray-500 hover:text-dr-gold text-sm transition-colors">Driveways &amp; Patios</a></li>
+          <li><a href="#services" class="text-gray-500 hover:text-dr-gold text-sm transition-colors">Concrete Restoration &amp; Repair</a></li>
+          <li><a href="#services" class="text-gray-500 hover:text-dr-gold text-sm transition-colors">Stamped &amp; Decorative</a></li>
+          <li><a href="#services" class="text-gray-500 hover:text-dr-gold text-sm transition-colors">Steps &amp; Stoops</a></li>
+          <li><a href="#services" class="text-gray-500 hover:text-dr-gold text-sm transition-colors">Wash &amp; Sealing</a></li>
+          <li><a href="#services" class="text-gray-500 hover:text-dr-gold text-sm transition-colors">Commercial Flatwork</a></li>
+        </ul>
+      </div>
+
+      <!-- Service Areas -->
+      <div>
+        <h4 class="font-heading font-bold text-white text-xs uppercase tracking-widest mb-4">Service Areas</h4>
+        <ul class="space-y-1.5">
+          <li class="text-gray-500 text-sm">Cleveland · Lakewood · Parma</li>
+          <li class="text-gray-500 text-sm">Beachwood · Solon · Westlake</li>
+          <li class="text-gray-500 text-sm">Strongsville · North Olmsted</li>
+          <li class="text-gray-500 text-sm">Mentor · Avon Lake · Euclid</li>
+          <li class="text-gray-500 text-sm">Bay Village · Willoughby</li>
+          <li class="text-gray-500 text-sm">Medina · Chagrin Falls + NE Ohio</li>
+        </ul>
+      </div>
+
+      <!-- Trust badges -->
+      <div>
+        <h4 class="font-heading font-bold text-white text-xs uppercase tracking-widest mb-4">Licensed &amp; Trusted</h4>
+        <div class="space-y-2.5">
+          <div class="flex items-center gap-3 bg-dr-gold/5 border border-dr-gold/20 rounded-lg px-3 py-2.5">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.25C17.25 22.15 21 17.25 21 12V7l-9-5z"/></svg>
+            <div>
+              <p class="text-white text-xs font-semibold">State Licensed</p>
+              <p class="text-gray-600 text-xs">Ohio Licensed Contractor</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 bg-dr-gold/5 border border-dr-gold/20 rounded-lg px-3 py-2.5">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            <div>
+              <p class="text-white text-xs font-semibold">Fully Insured</p>
+              <p class="text-gray-600 text-xs">Liability &amp; Workers' Comp</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 bg-dr-gold/5 border border-dr-gold/20 rounded-lg px-3 py-2.5">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#F59E0B" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+            <div>
+              <p class="text-white text-xs font-semibold">4.9★ Google Rating</p>
+              <p class="text-gray-600 text-xs">80+ Verified Reviews</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-10 pt-8 border-t border-dr-gold/10 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p class="text-gray-600 text-xs">&copy; 2024 D&amp;R Concrete &amp; Restoration LLC. All rights reserved. Cleveland, Ohio.</p>
+      <div class="flex gap-5">
+        <a href="#" class="text-gray-600 hover:text-gray-400 text-xs transition-colors">Privacy Policy</a>
+        <a href="#" class="text-gray-600 hover:text-gray-400 text-xs transition-colors">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  // Sticky header
+  const header = document.getElementById('site-header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 10);
+  }, { passive: true });
+
+  // Mobile menu
+  const toggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const iconOpen = document.getElementById('icon-open');
+  const iconClose = document.getElementById('icon-close');
+  toggle.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.contains('open');
+    mobileMenu.classList.toggle('open', !isOpen);
+    mobileMenu.classList.toggle('closed', isOpen);
+    mobileMenu.setAttribute('aria-hidden', String(isOpen));
+    toggle.setAttribute('aria-expanded', String(!isOpen));
+    iconOpen.classList.toggle('hidden', !isOpen);
+    iconClose.classList.toggle('hidden', isOpen);
+  });
+  document.querySelectorAll('.mobile-nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.replace('open', 'closed');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+      toggle.setAttribute('aria-expanded', 'false');
+      iconOpen.classList.remove('hidden');
+      iconClose.classList.add('hidden');
+    });
+  });
+
+  // Form
+  const form = document.getElementById('quote-form');
+  function showError(id, msg) {
+    const el = document.getElementById(id + '-error');
+    if (el) { el.textContent = msg; el.classList.remove('hidden'); }
+    const inp = document.getElementById(id);
+    if (inp) inp.style.borderColor = '#EF4444';
+  }
+  function clearError(id) {
+    const el = document.getElementById(id + '-error');
+    if (el) { el.textContent = ''; el.classList.add('hidden'); }
+    const inp = document.getElementById(id);
+    if (inp) inp.style.borderColor = '';
+  }
+  ['name','phone','service','zip'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('blur', () => {
+      el.value.trim() ? clearError(id) : showError(id, 'This field is required.');
+    });
+  });
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    let valid = true;
+    ['name','phone','service','zip'].forEach(id => clearError(id));
+    const name = document.getElementById('name');
+    const phone = document.getElementById('phone');
+    const service = document.getElementById('service');
+    const zip = document.getElementById('zip');
+    if (!name.value.trim())  { showError('name', 'Please enter your full name.'); valid = false; }
+    if (!phone.value.trim()) { showError('phone', 'Please enter your phone number.'); valid = false; }
+    else if (!/[\d\s\-\(\)]{7,}/.test(phone.value)) { showError('phone', 'Please enter a valid phone number.'); valid = false; }
+    if (!service.value)      { showError('service', 'Please select a service.'); valid = false; }
+    if (!zip.value.trim())   { showError('zip', 'Please enter your zip code.'); valid = false; }
+    else if (!/^\d{5}$/.test(zip.value.trim())) { showError('zip', 'Please enter a valid 5-digit zip code.'); valid = false; }
+    if (!valid) return;
+    const btn = form.querySelector('button[type="submit"]');
+    const label = document.getElementById('btn-label');
+    const arrow = document.getElementById('btn-arrow');
+    const spinner = document.getElementById('btn-spinner');
+    btn.disabled = true;
+    label.textContent = 'Sending…';
+    arrow.classList.add('hidden');
+    spinner.classList.remove('hidden');
+    setTimeout(() => {
+      btn.disabled = false;
+      label.textContent = 'Get My Free Estimate';
+      arrow.classList.remove('hidden');
+      spinner.classList.add('hidden');
+      document.getElementById('form-success').classList.remove('hidden');
+      form.reset();
+    }, 1600);
+  });
+</script>
+</body>
+</html>
